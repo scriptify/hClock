@@ -1,7 +1,7 @@
 {
-  "name": "holoweb-vanillajs",
+  "name": "hClock",
   "version": "0.0.1",
-  "description": "An implementation of HoloWeb in vanillajs. No external libraries in use!",
+  "description": "A HoloWeb-App - Making your alarmclock holographic!",
   "main": "build/bundle.js",
   "author": "scriptify <maximilian.torggler@tuta.io>",
   "license": "MIT",
@@ -30,5 +30,8 @@
     "webpack-dev-server": "*",
     "webpack-merge": "*",
     "file-loader": "*"
+  },
+  "dependencies": {
+    "holoweb-vanillajs": "file:///home/maximilian/DEV/holoweb-vanillajs"
   }
 }

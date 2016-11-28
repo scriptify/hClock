@@ -1,0 +1,16 @@
+
+* {
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out;
+}
+
+body {
+  overflow: hidden;
+}
+
+.app-container {
+  font-family: Calibri, Roboto, sans;
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+}

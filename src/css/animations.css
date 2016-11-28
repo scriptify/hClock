@@ -1,0 +1,119 @@
+.animate-to-bottom {
+  animation-name: toBottomAnimation;
+  position: relative;
+}
+
+@keyframes toBottomAnimation {
+  from {
+    bottom: 0;
+    opacity: 1;
+  } to {
+    bottom: -100%;
+    opacity: 0;
+  }
+}
+
+.animate-to-top {
+  animation-name: toTopAnimation;
+  position: relative;
+}
+
+@keyframes toTopAnimation {
+  from {
+    bottom: -100%;
+    opacity: 0;
+  } to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.animate-to-very-top {
+  animation-name: toVeryTopAnimation;
+  position: relative;
+}
+
+@keyframes toVeryTopAnimation {
+  from {
+    bottom: 0;
+    opacity: 0;
+  } to {
+    bottom: 300%;
+    opacity: 1;
+  }
+}
+
+.animate-to-very-bottom {
+  animation-name: toVeryBottomAnimation;
+  position: relative;
+}
+
+@keyframes toVeryBottomAnimation {
+  from {
+    bottom: 300%;
+    opacity: 1;
+  } to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.animate-to-left {
+  animation-name: toLeftAnimation;
+  position: relative;
+}
+
+@keyframes toLeftAnimation {
+  from {
+    right: 0;
+    opacity: 1;
+  } to {
+    opacity: 0;
+    right: 100%;
+  }
+}
+
+.animate-from-left {
+  animation-name: fromLeftAnimation;
+  position: relative;
+}
+
+@keyframes fromLeftAnimation {
+  from {
+    left: 100%;
+    opacity: 0;
+  } to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.animate-to-right {
+  animation-name: toRightAnimation;
+  position: relative;
+}
+
+@keyframes toRightAnimation {
+  from {
+    left: 0;
+    opacity: 1;
+  } to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.animate-from-right {
+  animation-name: fromRightAnimation;
+  position: relative;
+}
+
+@keyframes fromRightAnimation {
+  from {
+    left: -100%;
+    opacity: 0;
+  } to {
+    opacity: 1;
+    left: 0;
+  }
+}
