@@ -32,6 +32,6 @@
     "file-loader": "*"
   },
   "dependencies": {
-    "holoweb": "file:///home/maximilian/DEV/holoweb-vanillajs"
+    "holoweb": "0.0.1"
   }
 }
