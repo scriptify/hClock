@@ -1,0 +1,31 @@
+:root {
+  --tertiar-color: #4D4D4D;
+  --secondary-color: #7F8E8B;
+  --primary-color: #7CA39C;
+}
+
+.alarm {
+  height: 100%;
+  font-size: 15pt;
+  & div {
+    height: 50%;
+    width: 100%;
+    display: table;
+    box-shadow: 0px 0px 10px #000;
+
+    & p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+
+  & .hours {
+    background-color: var(--secondary-color);
+  }
+
+  & .minutes {
+    background-color: var(--tertiar-color);
+  }
+
+}

@@ -59,7 +59,8 @@ switch(TARGET) {
         hot: true,
         inline: true,
         progress: true,
-        stats: 'errors-only'
+        stats: 'errors-only',
+        host: '0.0.0.0'
       },
       plugins: [
         new webpack.HotModuleReplacementPlugin(),

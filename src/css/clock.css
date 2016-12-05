@@ -1,7 +1,98 @@
+:root {
+  --tertiar-color: #4D4D4D;
+  --secondary-color: #7F8E8B;
+  --primary-color: #7CA39C;
+  --digit-height: calc(100% / 3);
+}
+
 .clock {
   height: 100%;
   width: 100%;
   font-size: 30px;
-  text-align: center;
-  background-color: #484848;
+
+  & .side {
+    width: 100%;
+    height: var(--digit-height);
+
+    display: table;
+
+    box-shadow: 0px 0px 10px #000;
+
+    & .font {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+  }
+
+  & .hours {
+    background-color: var(--primary-color);
+  }
+
+  & .minutes {
+    background-color: var(--secondary-color);
+  }
+
+  & .seconds {
+    background-color: var(--tertiar-color);
+  }
+
+}
+
+.animate-rotate-part-1 {
+  animation: rotateDigitPart1 0.25s linear;
+}
+
+.animate-rotate-part-2 {
+  animation: rotateDigitPart2 0.75s linear;
+}
+
+@keyframes rotateDigitPart1 {
+  from {
+    transform: rotateY(0deg);
+  } to {
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes rotateDigitPart2 {
+  from {
+    transform: rotateY(90deg);
+  } to {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-seconds-part-1 {
+  animation: animateSecondsPart1 0.25s;
+  position: relative;
+}
+
+.animate-seconds-part-2 {
+  animation: animateSecondsPart2 0.25s;
+  position: relative;
+}
+
+@keyframes animateSecondsPart1 {
+  from {
+    opacity: 1;
+    right: 0;
+    transform: rotateY(0);
+    text-shadow: 2px 2px #000;
+  } to {
+    opacity: 0;
+    right: 40%;
+    transform: rotateY(80deg);
+    text-shadow: 50px 2px #000;
+  }
+}
+
+@keyframes animateSecondsPart2 {
+  from {
+    right: 40%;
+    opacity: 0;
+  } to {
+    opacity: 1;
+    right: 0;
+  }
 }

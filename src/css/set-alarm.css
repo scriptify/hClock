@@ -1,0 +1,43 @@
+:root {
+  --fontSize: 15pt;
+  --tertiar-color: #4D4D4D;
+  --secondary-color: #7F8E8B;
+  --primary-color: #7CA39C;
+}
+
+.set-alarm {
+
+  height: 100%;
+
+  & .number-picker {
+
+    height: 50%;
+
+    margin-top: 5px;
+
+    & button {
+      width: 20%;
+      height: 100%;
+      display: inline-block;
+      font-size: var(--fontSize);
+      background-color: var(--primary-color);
+      border: none;
+      border-radius: 5px;
+      color: #FFF;
+    }
+
+    & input[type="number"] {
+      width: 30%;
+      height: 100%;
+      display: inline-block;
+      font-size: var(--fontSize);
+      border: none;
+      background-color: var(--tertiar-color);
+      color: #FFF;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+  }
+
+}
